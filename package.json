@@ -7,12 +7,14 @@
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "scripts": {
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepublish": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -82,13 +84,13 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.13.9",
-    "simple-vdf": "^1.2.1"
+    "simple-vdf": "^1.1.1"
   },
   "peerDependencies": {
-    "react": "^16.0.0 || ^17.0.0",
-    "react-dom": "^16.0.0 || ^17.0.0",
     "@material-ui/core": "^4.0.0",
-    "@material-ui/icons": "^4.0.0"
+    "@material-ui/icons": "^4.0.0",
+    "react": "^16.0.0 || ^17.0.0",
+    "react-dom": "^16.0.0 || ^17.0.0"
   },
   "files": [
     "dist",
