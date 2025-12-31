@@ -8,7 +8,10 @@
   "jsnext:main": "dist/index.es.js",
   "scripts": {
     "test": "jest",
-    "build": "rollup -c",
+    "build": "rollup -c && npm run copy-services",
+    "copy-services": "cp src/SteamMonitor.js dist/ && cp src/SteamVDFParser.js dist/",
+    "postinstall": "npm run remove-peer-deps || true",
+    "remove-peer-deps": "rm -rf node_modules/react node_modules/react-dom node_modules/@material-ui node_modules/react-is node_modules/react-transition-group node_modules/hoist-non-react-statics || true",
     "start": "rollup -c -w",
     "prepublish": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
@@ -89,6 +92,7 @@
   "peerDependencies": {
     "@material-ui/core": "^4.0.0",
     "@material-ui/icons": "^4.0.0",
+    "@material-ui/lab": "^4.0.0",
     "react": "^16.0.0 || ^17.0.0",
     "react-dom": "^16.0.0 || ^17.0.0"
   },

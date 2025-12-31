@@ -36,10 +36,10 @@ import {
     Chip,
     Box,
     CircularProgress,
-    Alert,
     IconButton,
     Tooltip
 } from '@material-ui/core';
+import Alert from '@material-ui/lab/Alert';
 import {
     Computer as ComputerIcon,
     Refresh as RefreshIcon,

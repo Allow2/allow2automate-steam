@@ -20,8 +20,8 @@ import TabContent from './components/TabContent';
 import SteamStatus from './components/SteamStatus';
 
 // Import Steam services
-const SteamMonitor = require('./services/SteamMonitor');
-const SteamVDFParser = require('./services/SteamVDFParser');
+const SteamMonitor = require('./SteamMonitor');
+const SteamVDFParser = require('./SteamVDFParser');
 
 /**
  * Steam Plugin Factory
