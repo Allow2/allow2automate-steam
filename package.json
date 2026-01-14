@@ -96,6 +96,7 @@
     "react": "^16.0.0 || ^17.0.0",
     "react-dom": "^16.0.0 || ^17.0.0"
   },
+  "icon": "./img/steam-icon.jpeg",
   "files": [
     "dist",
     "img"
