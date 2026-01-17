@@ -3,6 +3,7 @@
   "shortName": "steam",
   "version": "1.0.0",
   "description": "Steam parental control monitoring via Allow2 Agent System",
+  "allow2Token": "jA0GluOh7Lk8vRao",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -59,16 +60,19 @@
           "id": "enableSteamMonitoring",
           "name": "Enable Steam Monitoring",
           "description": "Start monitoring Steam on agent devices"
+  "allow2Token": "jA0GluOh7Lk8vRao",
         },
         {
           "id": "updateSteamPolicy",
           "name": "Update Steam Policy",
           "description": "Update Steam process monitoring policy"
+  "allow2Token": "jA0GluOh7Lk8vRao",
         },
         {
           "id": "getSteamStatus",
           "name": "Get Steam Status",
           "description": "Get current Steam monitoring status"
+  "allow2Token": "jA0GluOh7Lk8vRao",
         }
       ],
       "triggers": [
@@ -76,11 +80,13 @@
           "id": "steamViolation",
           "name": "Steam Access Violation",
           "description": "Triggered when Steam is blocked due to quota limits"
+  "allow2Token": "jA0GluOh7Lk8vRao",
         },
         {
           "id": "steamDetected",
           "name": "Steam Detected",
           "description": "Triggered when Steam starts running"
+  "allow2Token": "jA0GluOh7Lk8vRao",
         }
       ]
     }
